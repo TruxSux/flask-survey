@@ -1,0 +1,11 @@
+{% extends "base.html" %} 
+{% block title %} Survey {% endblock %} 
+{% block content%}
+<h1>Flask Survey</h1>
+<hr>
+<h2>Instructions:</h2>
+<p style="margin-left: 20px;">Press the start button and answer each question to the best of you ability, once you have your answer selected and submitted, you will move onto the next question. There are 4 questions in total.</p>
+<form action="/question/0">
+    <button type="submit">Start survey!</button>
+</form>
+{% endblock%}
