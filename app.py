@@ -1,13 +1,9 @@
 import flask
-from flask_session import Session
 import surveys
 
 app = flask.Flask(__name__)
 app.config["DEBUG_TB_INTERCEPT_REDIRECTS"] = False
 app.config["SECRET_KEY"] = 'nimdA'
-app.config["SESSION_PERMANENT"] = False
-app.config["SESSION_TYPE"] = "filesystem"
-Session(app)
 responses = []
 c_qid = 0
 
